@@ -28,8 +28,6 @@ CREATE TABLE employee (
     FOREIGN KEY (role_id) REFERENCES role(id)
 );
 
-
-
 DESCRIBE department;
 DESCRIBE role;
 DESCRIBE employee;

@@ -23,9 +23,9 @@ VALUES  ("Head of Finance", 150000, 1),
         ("Employee Support", 80000, 5);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES  ("Nicholas", "Cougan", 1, 1),
-        ("Franziska", "Alf", 7, 2),
-        ("Julian", "Cougan", 10, 3);
+VALUES  ("Nicholas", "Cougan", 1, 3),
+        ("Franziska", "Alf", 10, 1),
+        ("Julian", "Cougan", 7, 2);
 
 
 
