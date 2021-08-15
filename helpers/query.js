@@ -1,9 +1,9 @@
 const { logQuery } = require('../helpers/db-query');
 
-function Query(req) {
+function Query(req, variable) {
     this.query = req,
     this.executeQuery = () => {
-        logQuery(this.query);
+        logQuery(this.query, variable);
     }
 };
 
