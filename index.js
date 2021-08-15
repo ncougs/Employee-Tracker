@@ -12,7 +12,7 @@ const init = async () => {
                 'list', 
                 'startingOption', 
                 `What would you like to do ?`, 
-                ['view all departments', 'view all roles', 'view all employees', 'add a department', 'add a role', 'add an employee', 'update an employee', 'view employees by manager', 'view employees by department', 'delete department']
+                ['view all departments', 'view all roles', 'view all employees', 'add a department', 'add a role', 'add an employee', 'update an employee', 'view employees by manager', 'view employees by department', 'delete department', 'delete role']
         )]
     );
 
@@ -26,5 +26,5 @@ init();
 
 
 //still to do:
-//Delete departments, roles, and employees.
+//Delete  employees.
 //View the total utilized budget of a department—in other words, the combined salaries of all employees in that department.
