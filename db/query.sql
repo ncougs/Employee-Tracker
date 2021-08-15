@@ -8,39 +8,40 @@ CONCAT(m.first_name, " ", m.last_name) AS Manager,
 department.name 'Department'
 FROM employee
 join employee m ON (employee.manager_id = m.id)
-JOIN role ON employee.role_id = role.id
-JOIN department on role.department_id = department.id;  
+LEFT OUTER JOIN role ON employee.role_id = role.id
+LEFT OUTER JOIN department on role.department_id = department.id;  
 
 -- WHEN I choose to view all departments
 -- THEN I am presented with a formatted table showing department names and department ids
 
-SELECT * FROM department;
+-- SELECT * FROM department;
 
--- WHEN I choose to view all roles
--- THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
+-- -- WHEN I choose to view all roles
+-- -- THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
 
-SELECT role.id, role.title, role.salary, department.name 'department' FROM role
-JOIN department ON role.department_id = department.id;
+-- SELECT role.id, role.title, role.salary, department.name 'department' FROM role
+-- JOIN department ON role.department_id = department.id;
 
 
--- View employees by manager.
--- Swap where clause to filter by manager id
+-- -- View employees by manager.
+-- -- Swap where clause to filter by manager id
 
-SELECT employee.first_name, employee.last_name,
-CONCAT(m.first_name, " ", m.last_name) AS Manager
-FROM employee
-JOIN employee m ON (employee.manager_id = m.id)
-WHERE employee.manager_id = 3;
+-- SELECT employee.first_name, employee.last_name,
+-- CONCAT(m.first_name, " ", m.last_name) AS Manager
+-- FROM employee
+-- JOIN employee m ON (employee.manager_id = m.id)
+-- WHERE employee.manager_id = 3;
 
--- View employees by department.
+-- -- View employees by department.
+-- -- Swap where clause to filter by manager dept id
 
-SELECT employee.first_name, employee.last_name,
-role.title,
-department.name 'departement'
-FROM employee
-JOIN role ON employee.role_id = role.id
-JOIN department on role.department_id = department.id
-where department_id = 1;
+-- SELECT employee.first_name, employee.last_name,
+-- role.title,
+-- department.name 'departement'
+-- FROM employee
+-- JOIN role ON employee.role_id = role.id
+-- JOIN department on role.department_id = department.id
+-- where department_id = 1;
 
 
 
