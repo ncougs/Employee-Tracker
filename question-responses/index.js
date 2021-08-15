@@ -6,6 +6,7 @@ const addRole = require('./add-role');
 const addEmployee = require('./add-employee');
 const updateEmployee = require('./udpate-employee');
 const viewEmployeesByManager = require('./view-employees-by-manager');
+const viewEmployeesByDepartment = require('./view-employees-by-department');
 
 //handle responses from startingOption
 
@@ -18,7 +19,7 @@ const handleRequest = (startingOption) => {
     if(startingOption == 'add an employee') {addEmployee().then(result => result.executeQuery())}; 
     if(startingOption == 'update an employee') {updateEmployee().then(result => result.executeQuery())}; 
     if(startingOption == 'view employees by manager') {viewEmployeesByManager().then(result => result.executeQuery())}; 
-    
+    if(startingOption == 'view employees by department') {viewEmployeesByDepartment().then(result => result.executeQuery())}; 
 };
 
 module.exports = handleRequest;
