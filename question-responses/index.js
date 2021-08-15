@@ -10,6 +10,7 @@ const viewEmployeesByDepartment = require('./view-employees-by-department');
 const deleteDepartment = require('./delete-department');
 const deleteRole = require('./delete-role');
 const deleteEmployee = require('./delete-employee');
+const viewUtlizedBudget = require('./view-total-salary-utlized-budget');
 
 //handle responses from startingOption
 
@@ -26,8 +27,7 @@ const handleRequest = (startingOption) => {
     if(startingOption == 'delete department') {deleteDepartment().then(result => result.executeQuery())}; 
     if(startingOption == 'delete role') {deleteRole().then(result => result.executeQuery())}; 
     if(startingOption == 'delete employee') {deleteEmployee().then(result => result.executeQuery())}; 
-
-    
+    if(startingOption == 'view utilized budget') {viewUtlizedBudget().then(result => result.executeQuery())};    
 };
 
 module.exports = handleRequest;
