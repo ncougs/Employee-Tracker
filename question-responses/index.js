@@ -15,7 +15,7 @@ const handleRequest = (startingOption) => {
     if(startingOption == 'add a department') {addDepartment().then(result => result.executeQuery())};
     if(startingOption == 'add a role') {addRole().then(result => result.executeQuery())}; 
     if(startingOption == 'add an employee') {addEmployee().then(result => result.executeQuery())}; 
-    if(startingOption == 'update an employee role') {updateEmployee().then(result => result.executeQuery())}; 
+    if(startingOption == 'update an employee') {updateEmployee().then(result => result.executeQuery())}; 
 };
 
 module.exports = handleRequest;
