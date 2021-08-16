@@ -32,7 +32,7 @@ AS A business owner I WANT to be able to view and manage the departments, roles,
 * View all departments
 * View all roles
 * View all employees
-* Add a departmen 
+* Add a department
 * Add a role
 * Add an employee
 * Update an employee's:
