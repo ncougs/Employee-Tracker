@@ -28,7 +28,7 @@ AS A business owner I WANT to be able to view and manage the departments, roles,
 
 ### Application Functionality
 
-**This applicaiton allows the following tasks to be completed**
+**This application allows the following tasks to be completed**
 * View all departments
 * View all roles
 * View all employees
