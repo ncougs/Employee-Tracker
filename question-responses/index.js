@@ -1,3 +1,4 @@
+//interal modules required to run handleRequest
 const viewDepartments = require('./view-departments');
 const viewRoles = require('./view-roles');
 const viewEmployees = require('./view-employees');
@@ -14,7 +15,8 @@ const viewUtlizedBudget = require('./view-total-salary-utlized-budget');
 
 //handle responses from startingOption
 
-const handleRequest = (startingOption) => {
+const handleRequest = async (startingOption) => {
+ 
     if(startingOption == 'view all departments') {viewDepartments.executeQuery();};
     if(startingOption == 'view all roles') {viewRoles.executeQuery();};
     if(startingOption == 'view all employees') {viewEmployees.executeQuery();};
@@ -27,7 +29,8 @@ const handleRequest = (startingOption) => {
     if(startingOption == 'delete department') {deleteDepartment().then(result => result.executeQuery())}; 
     if(startingOption == 'delete role') {deleteRole().then(result => result.executeQuery())}; 
     if(startingOption == 'delete employee') {deleteEmployee().then(result => result.executeQuery())}; 
-    if(startingOption == 'view utilized budget') {viewUtlizedBudget().then(result => result.executeQuery())};    
+    if(startingOption == 'view utilized budget') {viewUtlizedBudget().then(result => result.executeQuery())};
+
 };
 
 module.exports = handleRequest;

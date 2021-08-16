@@ -23,12 +23,13 @@ VALUES  ("Head of Finance", 150000, 1),
         ("Employee Support", 80000, 5);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES  ("Nicholas", "Cougan", 1, 3),
-        ("Franziska", "Alf", 10, 1),
-        ("Julian", "Cougan", 7, 2);
-
-
-
+VALUES  ("Harry", "Potter", 1, 3),
+        ("Ron", "Weasly", 10, 1),
+        ("Hermione", "Granger", 7, 2),
+        ("Luna", "Lovegood", 13, 1),
+        ("Draco", "Malfoy", 2, 1),
+        ("Sirius", "Black", 6, 2),
+        ("Bellatrix", "Lestrange", 14, 4);
 
 SELECT * FROM department;
 SELECT * FROM role;
