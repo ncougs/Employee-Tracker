@@ -24,7 +24,7 @@ AS A business owner I WANT to be able to view and manage the departments, roles,
 
 **Perform Operations**
 
-![Employee Tracker - part2](https://user-images.githubusercontent.com/84214872/129539210-cc1cdc6c-d496-435c-a0cb-9f9275320b80.gif)
+![Employee Tracker - perform operations](https://user-images.githubusercontent.com/84214872/129541860-3dee1d6a-88f6-489e-b06d-3b77fa172fa8.gif)
 
 ### Application Functionality
 
